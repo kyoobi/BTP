@@ -92,19 +92,19 @@
         <span class="navbar-text">
 
         {% if request.user.is_authenticated %}
-        <p>Welcome {{user.first_name}}!
-        <a class="nav-link btn-small btn" style="color:#F3F5F5" href="/logout">Logout</a>
+        <p style="font-family: Roboto;">Welcome {{user.first_name}}!
+        <a class="nav-link btn-small btn" style="color:#F3F5F5;font-family: Roboto;" href="/logout">Logout</a>
         </p>
 
         {% else %}
-        <a class="nav-link " style="color:#F3F5F5" href="/form">Login / Register</a>
+        <a class="nav-link " style="color:#F3F5F5;font-family: Roboto;" href="/form">Login / Register</a>
         {% endif %}
     </span>
     </nav>
 
     <br>
     <h1>Delhi Real Time Load and Forecasted plots </h1>
-    <!-- <button id="kp">Sub</button> -->
+
     <div id="ope"></div>
     <table style="margin:0 auto">
         <thead>

@@ -6,13 +6,13 @@ url = 'http://www.delhisldc.org/Loaddata.aspx?mode='
 
 day_range = list(range(1, 32)) # days, 1 to 31
 
-# months, Aug to Dec for 2017, and Jan for 2018
+# months, Aug to Dec for 2018, and Jan for 2019
 month_range = {
-				2017: list(range(8, 13)),
-				2018: [1]
+				2018: list(range(8, 13)),
+				2019: [1]
 				}
 
-year_range = [2017, 2018]
+year_range = [2018, 2019]
 
 if not os.path.exists('SLDC_Data'):
 	    os.makedirs('SLDC_Data')

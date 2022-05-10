@@ -27,7 +27,7 @@ def reload_task():
     url = 'http://www.delhisldc.org/Loaddata.aspx?mode='
     day_range = list(range(datetime.date.today().day,
                            datetime.date.today().day+1))  # days, 1 to 31
-    # months, Aug to Dec for 2017, and Jan for 2018
+    # months, Aug to Dec for 2018, and Jan for 2019
     
     month = datetime.date.today().month
     year = datetime.date.today().year

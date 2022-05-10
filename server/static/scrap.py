@@ -6,13 +6,13 @@ url = 'https://www.delhisldc.org/Loaddata.aspx?mode='
 
 day_range = list(range(1, 32)) # days, 1 to 31
 
-# months, Aug to Dec for 2017, and Jan for 2018
+# months, Aug to Dec for 2018, and Jan for 2019
 month_range = {
-				2017: [8,9,10,11,12],
-				2018: [1,2,3]
+				2018: [8,9,10,11,12],
+				2019: [1,2,3]
 				}
 
-year_range = [2017,2018]
+year_range = [2018,2019]
 
 if not os.path.exists('SLDC_Data'):
 	    os.makedirs('SLDC_Data')
@@ -30,7 +30,6 @@ for year in year_range:
 				table = soup.find('table', {'id':'ContentPlaceHolder3_DGGridAv'}) # get the table from html
 				trs = table.findAll('tr') # extract all rows of the table
 				if len(trs[1:])!=0: # no need to create csv file, if there's no data, for Aug month of 2017
-					print("ayush")
 					csv_filename = month_dir + '%s.csv' % date.replace('/', '-')
 					if os.path.exists(csv_filename): os.remove(csv_filename) # remove the file it already exists, can result in data duplicacy
 					with open(csv_filename, 'a') as f:

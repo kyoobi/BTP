@@ -6,13 +6,13 @@ url = 'https://www.wunderground.com/history/airport/VIDP/%d/%d/%d/DailyHistory.h
 
 day_range = list(range(1, 32)) # days, 1 to 31
 
-# months, Aug to Dec for 2017, and Jan for 2018
+# months, Aug to Dec for 2020, and Jan for 2021
 month_range = {
-				2017: list(range(8, 13)),
-				2018: [1]
+				2020: list(range(8, 13)),
+				2021: [1]
 				}
 
-year_range = [2017, 2018]
+year_range = [2020, 2021]
 
 if not os.path.exists('Whether_Data'):
 	    os.makedirs('Whether_Data')

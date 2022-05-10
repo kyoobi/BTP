@@ -1,4 +1,4 @@
-#!/home/eee/ug/15084015/miniconda3/envs/btp/bin/python
+#!/home/eee/ug/19085096/miniconda3/envs/btp/bin/python
 from subprocess import call
 import pdb
 import pandas as pd
@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 
 def scp(directory, date):
     cmd = (
-        "scp -i /home/eee/ug/15084015/.ssh/btp.pem predictions/%s/%s.csv ubuntu@13.126.97.91:/var/www/html/btech_project/server/predictions/%s/"
+        "scp -i /home/eee/ug/19085096/.ssh/btp.pem predictions/%s/%s.csv ubuntu@13.126.97.91:/var/www/html/btech_project/server/predictions/%s/"
         % (directory, date, directory)
     )
     call(cmd.split(" "))

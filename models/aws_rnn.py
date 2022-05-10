@@ -1,4 +1,4 @@
-#!/home/eee/ug/15084015/miniconda3/envs/btp/bin/python
+#!/home/eee/ug/19085096/miniconda3/envs/btp/bin/python
 """The script is to run half an hour after midnight. Scrap last day's data and update lstm_data.csv"""
 import os
 import sys
@@ -236,7 +236,7 @@ for model_name in models:
     pred_df.to_csv("predictions/%s/%s.csv" % (model_name, today), index=False)
     # now, send the file to the AWS server using scp
     cmd = (
-        "scp -i /home/eee/ug/15084015/.ssh/btp.pem predictions/%s/%s.csv ubuntu@13.126.97.91:/var/www/html/btech_project/server/predictions/%s/"
+        "scp -i /home/eee/ug/19085096/.ssh/btp.pem predictions/%s/%s.csv ubuntu@13.126.97.91:/var/www/html/btech_project/server/predictions/%s/"
         % (model_name, today, model_name)
     )
     logger.info(call(cmd.split(" ")))

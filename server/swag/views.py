@@ -105,12 +105,12 @@ def forecasted_plot(request):
 #         rnn_csv = pd.read_csv(os.path.join(csv_path, 'predictions/RNN/'+str(day).zfill(2)+"-"+str(month).zfill(2)+"-"+str(year)+'.csv'))['load'].values
 #         RNN_load.extend(list(rnn_csv))
 
-#         l.append(SMA_load)
-#         l.append(WMA_load)
-#         l.append(SES_load)
+        l.append(SMA_load)
+        l.append(WMA_load)
+        l.append(SES_load)
         l.append(ARIMA_load)
 #         l.append(LSTM_load)
-#         l.append(GRU_load)
+        l.append(GRU_load)
 #         l.append(RNN_load)
         l.append(q)        #q==actual
         redu = q.count(None)

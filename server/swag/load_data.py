@@ -7,7 +7,7 @@ from swag.models import CSV
 import csv, datetime
 from datetime import timedelta
 
-start_date = datetime.date(2018,8,27)
+start_date = datetime.date(2022,5,1)
 start_time = datetime.time(0,0)
 end_date = datetime.date.today()
 dt = datetime.datetime.combine(start_date,start_time)

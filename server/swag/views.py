@@ -110,7 +110,7 @@ def forecasted_plot(request):
 #         l.append(SES_load)
 #         l.append(ARIMA_load)
 #         l.append(LSTM_load)
-        l.append(GRU_load)
+#         l.append(GRU_load)
 #         l.append(RNN_load)
         l.append(q)        #q==actual
         redu = q.count(None)

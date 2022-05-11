@@ -87,20 +87,20 @@ def forecasted_plot(request):
 
         arima_csv = pd.read_csv(os.path.join(csv_path, 'predictions/ARIMA/'+str(day).zfill(2)+"-"+str(month).zfill(2)+"-"+str(year)+'.csv'))['load'].values
         ARIMA_load.extend(list(arima_csv))
-#         wma_csv = pd.read_csv(os.path.join(csv_path, 'predictions/WMA/'+str(day).zfill(2)+"-"+str(month).zfill(2)+"-"+str(year)+'.csv'))['load'].values
-#         WMA_load.extend(list(wma_csv))
+        wma_csv = pd.read_csv(os.path.join(csv_path, 'predictions/WMA/'+str(day).zfill(2)+"-"+str(month).zfill(2)+"-"+str(year)+'.csv'))['load'].values
+        WMA_load.extend(list(wma_csv))
 
-#         sma_csv = pd.read_csv(os.path.join(csv_path, 'predictions/SMA/'+str(day).zfill(2)+"-"+str(month).zfill(2)+"-"+str(year)+'.csv'))['load'].values
-#         SMA_load.extend(list(sma_csv))
+        sma_csv = pd.read_csv(os.path.join(csv_path, 'predictions/SMA/'+str(day).zfill(2)+"-"+str(month).zfill(2)+"-"+str(year)+'.csv'))['load'].values
+        SMA_load.extend(list(sma_csv))
 
-#         ses_csv = pd.read_csv(os.path.join(csv_path, 'predictions/SES/'+str(day).zfill(2)+"-"+str(month).zfill(2)+"-"+str(year)+'.csv'))['load'].values
-#         SES_load.extend(list(ses_csv))
+        ses_csv = pd.read_csv(os.path.join(csv_path, 'predictions/SES/'+str(day).zfill(2)+"-"+str(month).zfill(2)+"-"+str(year)+'.csv'))['load'].values
+        SES_load.extend(list(ses_csv))
 
 #         lstm_csv = pd.read_csv(os.path.join(csv_path, 'predictions/LSTM/'+str(day).zfill(2)+"-"+str(month).zfill(2)+"-"+str(year)+'.csv'))['load'].values
 #         LSTM_load.extend(list(lstm_csv))
 
-#         gru_csv = pd.read_csv(os.path.join(csv_path, 'predictions/GRU/'+str(day).zfill(2)+"-"+str(month).zfill(2)+"-"+str(year)+'.csv'))['load'].values
-#         GRU_load.extend(list(gru_csv))
+        gru_csv = pd.read_csv(os.path.join(csv_path, 'predictions/GRU/'+str(day).zfill(2)+"-"+str(month).zfill(2)+"-"+str(year)+'.csv'))['load'].values
+        GRU_load.extend(list(gru_csv))
 
 #         rnn_csv = pd.read_csv(os.path.join(csv_path, 'predictions/RNN/'+str(day).zfill(2)+"-"+str(month).zfill(2)+"-"+str(year)+'.csv'))['load'].values
 #         RNN_load.extend(list(rnn_csv))
